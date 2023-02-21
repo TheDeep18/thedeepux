@@ -1,0 +1,916 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    /* font-size: 1.2rem; */
+}
+
+body {
+
+    font-family: Lato, sans-serif;
+}
+
+.heading {
+    margin: 140px 100px 0px;
+    color: #2e2e2e;
+}
+
+.heading::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #2e2e2e;
+    vertical-align: top;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+
+/* Navbar */
+#navbar {
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 84px;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+
+
+}
+
+#logo {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#links {
+    padding: 14px;
+    display: flex;
+    text-align: center;
+    list-style: none;
+
+}
+
+
+#links li a {
+    text-decoration: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #2e2e2e;
+    padding: 14px;
+    margin: 10px;
+    margin-bottom: 4px;
+    display: flex;
+    text-align: center;
+
+}
+
+
+
+#links a:hover {
+    cursor: pointer;
+    padding: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #ba9043;
+    display: flex;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+
+}
+
+#links a:active {
+    cursor: pointer;
+    padding: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #ba9043;
+    display: flex;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+
+}
+
+
+/* ################ Introduction ################# */
+
+/* ################### Introduction ############# */
+
+#introduction {
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 84px;
+    /* margin-top: 120px; */
+
+}
+
+.intro h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: #2e2e2e
+}
+
+.intro p {
+    font-family: 'Lato', serif;
+    padding: 14px 0;
+    font-size: 1.6rem;
+    letter-spacing: 6px;
+    color: #2e2e2e
+}
+
+.intro a {
+    font-family: 'Lato', serif;
+    text-decoration: none;
+
+    padding: 14px 0;
+    font-size: 1.5rem;
+    background-color: rgb(248, 248, 248);
+    color: #ceb072;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 5px 15px;
+    display: flex;
+    border: 0 solid none;
+    border-radius: 14px;
+    transition: all 0.2s ease-in;
+    letter-spacing: 4px;
+
+}
+
+.intro a:hover {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: #ceb072;
+    padding: 5px 15px;
+    display: flex;
+    border: 0 solid none;
+    border-radius: 14px;
+}
+
+.introImg img {
+    height: calc(100vh - 64px);
+    width: auto;
+    margin-right: 40px;
+
+}
+
+.intro {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 200px;
+}
+
+/* Body projects  */
+
+#projects {
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+#projects a {
+    text-decoration: none;
+}
+
+
+
+
+.projectItem {
+    /* width: 60vw; */
+    /* height: 281px; */
+    /* transition: 0.5s; */
+    margin: 100px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    /* background-position: center; */
+    /* background-size: cover; */
+    margin-bottom: 20px;
+}
+
+
+
+
+/* ############# Projects ################## */
+.poster img {
+    height: 300px;
+    width: 575px;
+    border: 0px solid none;
+    border-radius: 14px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: 0 10px 60px 0 rgb(0 0 0 / 20%);
+
+}
+
+/* .poster img {
+    height: 300px;
+    width: 575px;
+    border: 0px solid none;
+    border-radius: 14px;
+    transition: all 0.65s ease-in-out;
+} */
+
+/* .poster a {
+    height: 300px;
+    width: 575px;
+    border: 0px solid none;
+    border-radius: 14px;
+} */
+
+.poster:hover img {
+    transform: scale(1.020);
+    animation-delay: 0.25s !important;
+}
+
+/* .projItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px;
+    margin-bottom: 160px;
+} */
+
+.desc {
+    /* margin-top: 60px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.desc h1 {
+    margin-bottom: 18px;
+    color: #2e2e2e;
+
+}
+
+.desc p {
+    color: gray;
+    /* font-size: 20px; */
+}
+
+
+.keywords {
+    display: flex;
+    flex-direction: row;
+}
+
+.keywords span {
+    margin: 20px;
+    margin-bottom: 8px;
+    padding: 5px 15px;
+    background-color: rgb(248, 248, 248);
+    color: gray;
+    border: 0 solid none;
+    border-radius: 14px;
+    justify-content: space-between;
+}
+
+
+
+
+/* ########## Collaborations ################# */
+
+#collaborations {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    margin-bottom: 500px;
+    /* width: auto; */
+}
+
+.colabPoster {
+    transition: all 0.65s ease-in-out;
+
+}
+
+.colabPoster:hover {
+    transform: scale(1.05);
+    animation-delay: 0.25s !important;
+}
+
+.colab {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 20px;
+    align-items: center;
+    width: 40%;
+    border: 0 solid none;
+    border-radius: 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 44px
+}
+
+.colab img {
+    height: 350px;
+    border-radius: 14px;
+    margin-top: 40px;
+}
+
+
+.colab h2 {
+    text-align: center;
+    margin: 20px;
+    color: #2e2e2e;
+}
+
+.colab p {
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.colabKeywords {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.colabKeywords span {
+    margin: 12px;
+    margin-bottom: 8px;
+    padding: 5px 15px;
+    background-color: rgb(248, 248, 248);
+    color: gray;
+    border: 0 solid none;
+    border-radius: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* #################### colab one ################## */
+
+#colabOne {
+    position: relative;
+    top: 350px;
+}
+
+/* #################### colab two ################## */
+.colabLink {
+    text-decoration: none;
+    background-color: rgb(248, 248, 248);
+    color: #ceb072;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 5px 15px;
+    display: flex;
+    border: 0 solid none;
+    border-radius: 14px;
+    transition: all 0.2s linear;
+
+}
+
+.colabLink:hover {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: #ceb072;
+    padding: 5px 15px;
+    display: flex;
+    border: 0 solid none;
+    border-radius: 14px;
+}
+
+
+
+/* ################### Extra Work ###################  */
+
+#extraWork {
+    width: 70vw;
+    margin: 50px auto 150px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.extraWork img {
+    transition: all 0.65s ease-in-out;
+
+}
+
+.extraWork:hover img {
+    transform: scale(1.05);
+    animation-delay: 0.25s !important;
+}
+
+
+
+
+/* ############################ Daily UI ######################  */
+
+#dailyUI {
+    padding: 20px;
+    border: 0 solid none;
+    border-radius: 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+#dailyUI img {
+    height: 350px;
+    border-radius: 14px;
+    /* margin-top: 40px; */
+    border: 2px solid #887d87;
+}
+
+
+
+/* ################## sketches #######################  */
+
+#drawings {
+    padding: 20px;
+    border: 0 solid none;
+    border-radius: 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#drawings img {
+    height: 350px;
+    border-radius: 14px;
+    /* margin-top: 40px; */
+    border: 2px solid #6d5242;
+}
+
+
+
+/* ############## Contact ################# */
+
+
+#contact {
+    height: calc(100vh - 256px);
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    font-size: 4rem;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+#contact p {
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+    color: #2e2e2e;
+}
+
+
+/* ############## footer ################# */
+footer {
+    padding: 20px;
+    background-color: white;
+    color: #2e2e2e;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+
+/* ################### Responsiveness ###################  */
+@media only screen and (max-width: 760px) {
+    /* body {
+        background-color: lightblue;
+    } */
+
+    #navbar {
+        /* border: 5px solid black; */
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        /* height: 84px; */
+        margin: auto;
+        position: fixed;
+        z-index: 1;
+        /* top: 0px; */
+        background-color: white;
+        box-shadow: rgb(100 100 111 / 10%) 0px 7px 29px 0px;
+    }
+
+    #logo {
+        margin: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #logo div {
+        display: none;
+    }
+
+    #links {
+        padding: 17px;
+        display: flex;
+        text-align: center;
+        list-style: none;
+        /* display: none; */
+    }
+
+    #links li a {
+        text-decoration: none;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        color: #2e2e2e;
+        padding: 11px;
+        margin: 0px;
+        /* margin-bottom: 4px; */
+        display: flex;
+        text-align: center;
+    }
+
+    #links li:first-child {
+        display: none;
+    }
+
+    #introduction {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+        /* position: relative;
+    top: 84px; */
+        margin-top: 0px;
+    }
+
+    .intro {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        font-family: 'Playfair Display', serif;
+        color: #2e2e2e;
+    }
+
+    .intro p {
+        font-family: 'Lato', serif;
+        padding: 14px;
+        font-size: 1.2rem;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        letter-spacing: 6px;
+        color: #2e2e2e;
+    }
+
+    .intro a {
+        font-family: 'Lato', serif;
+        text-decoration: none;
+        padding: 14px 0;
+        font-size: 1.rem;
+        background-color: rgb(248, 248, 248);
+        color: #ceb072;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+        padding: 5px 15px;
+        display: flex;
+        text-align: center;
+        border: 0 solid none;
+        border-radius: 14px;
+        transition: all 0.2s ease-in;
+        letter-spacing: 4px;
+    }
+
+    .intro a:hover {
+        text-decoration: none;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+        background-color: #ceb072;
+        padding: 5px 15px;
+        display: flex;
+        text-align: center;
+        border: 0 solid none;
+        border-radius: 14px;
+    }
+
+    .introImg {
+        /* display: none; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .introImg img {
+        /* height: calc(60vh - 64px); */
+        /* width: auto; */
+        height: 50vh;
+        margin-right: 0px;
+    }
+
+    .heading {
+        margin: 270px 24px 0px;
+        color: #2e2e2e;
+    }
+
+    .projItem {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 24px;
+        margin-bottom: 52px;
+    }
+
+    .projectItem {
+        width: auto;
+        height: auto;
+        /* transition: 0.5s; */
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: space-between;
+        align-items: center;
+        /* background-position: center; */
+        /* background-size: cover; */
+        margin-bottom: 20px;
+    }
+
+    .desc {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .keywords {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        box-sizing: border-box;
+        /* margin-left: 12px; */
+    }
+
+    .keywords span {
+        text-align: center;
+        justify-content: center;
+        margin: 5px;
+        margin-bottom: 8px;
+        padding: 5px 15px;
+        background-color: rgb(248, 248, 248);
+        color: gray;
+        display: flex;
+        align-items: center;
+        border: 0 solid none;
+        border-radius: 14px;
+        justify-content: space-between;
+    }
+
+    .posterOne {
+        height: 21vh;
+        width: 84vw;
+    }
+
+    .posterOne img {
+        height: 21vh;
+        width: 84vw;
+    }
+
+    .projItem {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 24px;
+        margin-bottom: 52px;
+    }
+
+    #projTwo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .posterTwo {
+        height: 21vh;
+        width: 84vw;
+    }
+
+    .posterTwo img {
+        height: 18vh;
+        width: 84vw;
+    }
+
+    .desc p {
+        color: gray;
+        /* font-size: 20px; */
+        margin-bottom: 16px;
+        display: flex;
+        width: auto;
+        margin: 16px;
+    }
+
+    #collaborations {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px;
+        flex-direction: column;
+        margin-bottom: 85px;
+        /* width: auto; */
+    }
+
+    .colab {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        padding: 20px;
+        align-items: center;
+        width: auto;
+        border: 0 solid none;
+        border-radius: 14px;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        margin: 24px;
+    }
+
+    .colab img {
+        height: 28vh;
+        border-radius: 14px;
+        margin-top: 40px;
+    }
+
+    .colab h2 {
+        text-align: center;
+        margin: 16px;
+        color: #2e2e2e;
+    }
+
+    .colab p {
+        color: gray;
+        font-size: 14px;
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 14px;
+    }
+
+    .colabKeywords span {
+        margin: 12px;
+        margin-bottom: 8px;
+        padding: 2px 10px;
+        background-color: rgb(248, 248, 248);
+        color: gray;
+        display: flex;
+        border: 0 solid none;
+        text-align: center;
+        border-radius: 14px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .colabLink {
+        text-decoration: none;
+        background-color: rgb(248, 248, 248);
+        color: #ceb072;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        /* margin: 30px; */
+        padding: 5px 15px;
+        display: flex;
+        border: 0 solid none;
+        border-radius: 14px;
+        transition: all 0.2s linear;
+    }
+
+    .colabLink:hover {
+        text-decoration: none;
+        color: white;
+        justify-content: center;
+        box-sizing: border-box;
+        align-items: center;
+        /* margin: 30px; */
+        box-sizing: border-box;
+        background-color: #ceb072;
+        padding: 5px 15px;
+        display: flex;
+        border: 0 solid none;
+        border-radius: 14px;
+    }
+
+    #colabOne {
+        position: relative;
+        top: 0px;
+    }
+
+    #extraWork {
+        /* width: 70vw; */
+        margin: 50px auto 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #dailyUI {
+        padding: 20px;
+        border: 0 solid none;
+        border-radius: 14px;
+        margin: 16px 0px;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    }
+
+    #dailyUI img {
+        height: 28vh;
+        border-radius: 14px;
+        /* margin-top: 40px; */
+        border: 2px solid #887d87;
+    }
+
+    #drawings img {
+        height: 43vh;
+        border-radius: 14px;
+        /* margin-top: 40px; */
+        border: 2px solid #6d5242;
+    }
+
+    #contact {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 36px 24px;
+    }
+
+    .email {
+        width: auto
+    }
+
+
+    #contact a {
+        text-decoration: none;
+        color: #2e2e2e;
+        font-weight: bold;
+        font-size: 2rem;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+    }
+
+    #contact p {
+        font-family: Lato, sans-serif;
+        font-size: 1rem;
+        color: #2e2e2e;
+        display: flex;
+        align-items: center;
+    }
+}
