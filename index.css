@@ -204,7 +204,7 @@ body {
 .projectItem {
     /* width: 60vw; */
     /* height: 281px; */
-    /* transition: 0.5s; */
+    transition: 0.5s;
     display: flex;
     justify-items: center;
     justify-content: space-between;
