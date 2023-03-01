@@ -205,7 +205,6 @@ body {
     /* width: 60vw; */
     /* height: 281px; */
     /* transition: 0.5s; */
-    margin: 100px;
     display: flex;
     justify-items: center;
     justify-content: space-between;
@@ -521,30 +520,10 @@ footer {
         background-color: lightblue;
     } */
 
-    #navbar {
-        /* border: 5px solid black; */
-        display: flex;
-        flex-direction: row;
-        justify-items: center;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        /* height: 84px; */
-        margin: auto;
-        position: fixed;
-        z-index: 1;
-        /* top: 0px; */
-        background-color: white;
-        box-shadow: rgb(100 100 111 / 10%) 0px 7px 29px 0px;
-    }
+
 
     #logo {
         margin: 7px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
     }
 
     #logo div {
@@ -553,98 +532,49 @@ footer {
 
     #links {
         padding: 17px;
-        display: flex;
-        text-align: center;
-        list-style: none;
-        /* display: none; */
     }
 
     #links li a {
-        text-decoration: none;
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        color: #2e2e2e;
         padding: 11px;
         margin: 0px;
-        /* margin-bottom: 4px; */
-        display: flex;
-        text-align: center;
     }
 
-    #links li:first-child {
+    #links li:nth-child(4) {
         display: none;
     }
 
     #introduction {
-        height: auto;
-        display: flex;
         flex-direction: column-reverse;
-        /* justify-content: space-between; */
-        /* position: relative;
-    top: 84px; */
         margin-top: 0px;
     }
 
     .intro {
-        /* border: 1px solid black; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
         left: 0px;
     }
 
     .intro h1 {
         font-size: 2rem;
-        text-align: center;
         justify-content: center;
         display: flex;
-        font-family: 'Playfair Display', serif;
-        color: #2e2e2e;
     }
 
     .intro p {
-        font-family: 'Lato', serif;
-        padding: 14px;
         font-size: 1.2rem;
         text-align: center;
         justify-content: center;
         display: flex;
-        letter-spacing: 6px;
-        color: #2e2e2e;
     }
 
     .intro a {
-        font-family: 'Lato', serif;
-        text-decoration: none;
-        padding: 14px 0;
-        font-size: 1.rem;
-        background-color: rgb(248, 248, 248);
-        color: #ceb072;
-        justify-content: center;
-        align-items: center;
+        font-size: 1.2rem;
         margin: 24px;
         padding: 5px 15px;
-        display: flex;
-        text-align: center;
-        border: 0 solid none;
-        border-radius: 14px;
-        transition: all 0.2s ease-in;
-        letter-spacing: 4px;
     }
 
     .intro a:hover {
-        text-decoration: none;
-        color: white;
-        justify-content: center;
-        align-items: center;
+        font-size: 1.2rem;
         margin: 24px;
-        background-color: #ceb072;
         padding: 5px 15px;
-        display: flex;
-        text-align: center;
-        border: 0 solid none;
-        border-radius: 14px;
     }
 
     .introImg {
@@ -655,15 +585,12 @@ footer {
     }
 
     .introImg img {
-        /* height: calc(60vh - 64px); */
-        /* width: auto; */
         height: 50vh;
         margin-right: 0px;
     }
 
     .heading {
-        margin: 270px 24px 0px;
-        color: #2e2e2e;
+        margin: 170px 24px 0px;
     }
 
     .projItem {
@@ -694,6 +621,7 @@ footer {
         flex-direction: column;
         /* justify-content: center; */
         align-items: center;
+        margin: 16px 12px 16px;
     }
 
     .keywords {
@@ -744,13 +672,17 @@ footer {
     }
 
     .posterTwo {
-        height: 21vh;
+        height: 22vh;
         width: 84vw;
     }
 
     .posterTwo img {
-        height: 18vh;
+        height: 22vh;
         width: 84vw;
+    }
+
+    .poster img {
+        margin-top: 32px;
     }
 
     .desc p {
@@ -912,5 +844,13 @@ footer {
         color: #2e2e2e;
         display: flex;
         align-items: center;
+    }
+
+    footer {
+        padding: 16px 0px;
+        background-color: white;
+        color: #2e2e2e;
+        box-shadow: rgb(100 100 111 / 10%) 0px 7px 29px 0px;
+        text-align: center;
     }
 }
